@@ -1,9 +1,13 @@
+import { UserData } from "../pages/Conta";
+
 interface IDIoBank {
     login: boolean;
+    userinfo: undefined|UserData
 }
 
 const dioBank = {
-    login: false
+    login: false,
+    userinfo:{} as UserData
 }
 
 export const getAllLocalStorage = (): string | null  => {
