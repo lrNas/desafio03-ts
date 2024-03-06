@@ -30,7 +30,7 @@ const Conta = () => {
         }
 
         getData()
-    }, [])
+    })
 
     const actualData = new Date()
 
